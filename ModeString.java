@@ -1,4 +1,8 @@
 import java.io.*;
+const phoneNumber = "rgekjrng kjrgnjke";
+const salary ="serger";
+const stripeAcct = 12123;
+const username = "asfweferg.com";
 public class ModeString{
 	public static int mode(String arr,int t){
 		int []count=new int[255];
