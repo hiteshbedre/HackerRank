@@ -4,14 +4,6 @@ Fleet Api
 Solution: Added message under negative word
 
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/waypoint-sequence/src/main/java/com/here/routeplanner/constraints/ShippingListCreator.java#L241
-Data Category: Personal Identification
-Data Element: Age
-Sensitivity: low
-Confidence: high
-Matching string: usermessage
-Code: `
 w LoggedUserException( HttpStatus.BAD_REQUEST.value(), contextId, "Service time settings for Pickups/Drops must be an integer", "Pickup/Drop cannot parse Service time: " + v, log, e);
 }
 continue;
@@ -32,15 +24,6 @@ ShippingConstraint shippingConstraint= get( shippingId );
 ----------------------------------------------------------------------------------------------------
 Need to verify result with existing rule: Sample under double quatation
 
-
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/fleet-telematics-service/src/main/java/com/here/cle/controller/RoutingController.java#L191
-Data Category: Personal Identification
-Data Element: Driver
-Sensitivity: low
-Confidence: low
-Matching string: driver
-Code: `
 nks (li), maneuvers (mn), length (le), travelTime (tt), baseTime (bt), trafficTime (tm). Also supported: shape (sh), boundingBox (bb), turnbyturnmaneuvers (mm), none. Can be excluded in the response by putting a hyphen in the front. e.g. -mn. Also in RouteMatch mode legAttributes=mn is supported.")
 @RequestParam(value="legAttributes"             , required=false) final String legAttributes,
 @ApiParam(value = "Define optional attributes to be returned for each link. Defaults to shape (sh), length (le), remainTime (rt), remainDistance (rd), functionalClass (fc), warnings (wn), confidence (cd). Also supported: cost (co), maneuver (ma), timezone (tz), none. Can be excluded in the response by putting a hyphen in the front. e.g. -ma")
@@ -55,14 +38,6 @@ nks (li), maneuvers (mn), length (le), travelTime (tt), baseTime (bt), trafficTi
 
 ✅
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/census_boundaries/CompileCensusBoundariesLayers.java#L3661
-Data Category: Personal Identification
-Data Element: Gender
-Sensitivity: low
-Confidence: low
-Matching string: male
-Code: `
 case "HISP_NH_PI": return "Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone";
 case "HISP_OTHER": return "Hispanic or Latino: Some other race alone";
 case "HISP_TWO": return "Hispanic or Latino: Two or more races";
@@ -74,14 +49,6 @@ case "M_10_14": return "Total male population 10 to 14 years";
 `
 ✅
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/CompileJunctionViewLayers.java#L727
-Data Category: Personal Identification
-Data Element: Driver
-Sensitivity: low
-Confidence: low
-Matching string: driver
-Code: `
 Connection.commit();
 jdbcConnection.getDatabaseConnection().setAutoCommit(bAutoCommit);
 log.info(iNumFiles + " files inserted into TMP_JVSAR_FILES");
@@ -103,16 +70,6 @@ return "Locations of 2D Junctions and 2D Signs with references to their SVG (Sca
 "The style sheets and the sky are referenced within the junction/sign files, so applications must either create a matching file structure or embed them into the junction/sign files.<
 `
 ✅
-
-
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/census_boundaries/CompileCensusBoundariesLayers.java#L3665
-Data Category: Personal Identification
-Data Element: Gender
-Sensitivity: low
-Confidence: low
-Matching string: male
-Code: `
 case "M_UNDER_5": return "Total male population under 5 years";
 case "M_5_9": return "Total male population 5 to 9 years";
 case "M_10_14": return "Total male population 10 to 14 years";
@@ -128,14 +85,6 @@ case "M_21": return "Total male population 21 years";
 Solution: Eliminate with static values
 such as Regex: (SAMPLE)(\s)?=(\s)?([0-9])
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/toll_cost/model/TollCostSQLBean.java#L71
-Data Category: Financial Data
-Data Element: Card Number
-Sensitivity: high
-Confidence: low
-Matching string: CREDIT_CARD
-Code: `
 //Bit values for payment methods
 public static final int BIT_PAYMENT_METHOD_CASH = 1;
 public static final int BIT_PAYMENT_METHOD_BANK_CARD = 2;
@@ -147,14 +96,6 @@ public static final int BIT_PAYMENT_METHOD_VIDEO_TOLL_CHARGE = 32;
 `
 ❌
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/toll_cost/model/TollCostSQLBean.java#L53
-Data Category: Financial Data
-Data Element: Card Number
-Sensitivity: high
-Confidence: low
-Matching string: CREDIT_CARD
-Code: `
 //String constants for payment methods
 public static final String PAYMENT_METHOD_CASH = "CASH";
 public static final String PAYMENT_METHOD_BANK_CARD = "BANK CARD";
@@ -166,14 +107,7 @@ public static final String PAYMENT_METHOD_VIDEO_TOLL_CHARGE = "VIDEO TOLL CHARGE
 `
 ✅
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/CompilePoiXmlFuelTypesLayers.java#L43
-Data Category: Location Data
-Data Element: Location Data 1
-Sensitivity: low
-Confidence: high
-Matching string: LinkID
-Code: `
+
 private static final String NT_POI_ENTITIY_ID = "NT_POI_Entity_ID";
 private static final String POI_ENTITIY_ID = "POI_Entity_ID";
 private static final String POI_NAME = "POI_Name";
@@ -186,14 +120,7 @@ private static final String PRIVATE_ACCESS = "Private_Access";
 LinkID
 ✅
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-compiler/src/main/java/com/here/pdecompiler/CompilePoiXmlFuelTypesLayers.java#L54
-Data Category: Financial Data
-Data Element: Payment Mode
-Sensitivity: medium
-Confidence: high
-Matching string: PAYMENT_METHOD
-Code: `
+
 private static final String LONGITUDE = "Longitude";
 private static final String SIDE_OF_STREET = "Side_of_Street";
 private static final String PERCENT_FROM_REFNODE = "Percent_from_RefNode";
@@ -206,14 +133,6 @@ private static final String POI_XML_DELIVERY_PACKAGE_TAG = "DeliveryPackage";
 
 ❌
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/route/src/main/java/com/here/pde_router/Router.java#L91
-Data Category: Vehicle Data
-Data Element: License Plate
-Sensitivity: low
-Confidence: high
-Matching string: licensePlateEnd
-Code: `
 trian routing with public transport (multi modal)
 * Matrix routing
 * Permitted driving maneuvers (where u-turns are admin wide restricted)
@@ -240,14 +159,6 @@ private static final String       licensePlate                            = "Lic
 Solution: Check why this populated
 
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/pde-map-access/src/main/java/com/navteq/rdf_psf_lite/map_object/MapObjectTruckRestriction.java#L499
-Data Category: Personal Characteristics
-Data Element: Weight
-Sensitivity: medium
-Confidence: high
-Matching string: weightKg
-Code: `
 * */
 public static Integer parseWeightToKg(String weight) throws NumberFormatException
 {
@@ -260,14 +171,6 @@ else if	(weight.endsWith("kg" )) weightKg = Double.parseDouble(weight.substring(
 ❌
 
 
-Reponame: Fleet Api
-Filepath: https://main.gitlab.in.here.com/fleet-telematics-api/fleet-api/blob/master/fleet-telematics-service/src/main/java/com/here/cle/service/XYZOverlayImporterService.java#L349
-Data Category: Personal Characteristics
-Data Element: Weight
-Sensitivity: medium
-Confidence: high
-Matching string: weightKg
-Code: `
 String unit = restriction.get("unit");
 String operator = restriction.get("operator");
 double value = Double.parseDouble(restriction.get("value"));
