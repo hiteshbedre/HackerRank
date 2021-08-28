@@ -99,7 +99,7 @@ public static final int BIT_PAYMENT_METHOD_VIDEO_TOLL_CHARGE = 32;
 //String constants for payment methods
 public static final String PAYMENT_METHOD_CASH = "CASH";
 public static final String PAYMENT_METHOD_BANK_CARD = "BANK CARD";
-public static final String PAYMENT_METHOD_CREDIT_CARD = "CREDIT CARD";
+public static final String PAYMENT_METHOD_CREDIT_CARD = "CREDIT_CARD";
 public static final String PAYMENT_METHOD_PASS_SUBSCRIPTION = "PASS/SUBSCRIPTION";
 public static final String PAYMENT_METHOD_TRANSPONDER = "TRANSPONDER";
 public static final String PAYMENT_METHOD_VIDEO_TOLL_CHARGE = "VIDEO TOLL CHARGE";
