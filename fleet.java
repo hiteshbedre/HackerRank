@@ -1,3 +1,4 @@
+/*
 ----------
 Fleet Api
 ----------------------------------------------------------------------------------------------------
@@ -136,7 +137,7 @@ private static final String POI_XML_DELIVERY_PACKAGE_TAG = "DeliveryPackage";
 trian routing with public transport (multi modal)
 * Matrix routing
 * Permitted driving maneuvers (where u-turns are admin wide restricted)
-**/
+*
 public class Router
 {
 private static final long[]       EMPTY_LONG_ARRAY   = new long[0];
@@ -159,7 +160,7 @@ private static final String       licensePlate                            = "Lic
 Solution: Check why this populated
 
 
-* */
+* 
 public static Integer parseWeightToKg(String weight) throws NumberFormatException
 {
 double weightKg = 0;
@@ -188,3 +189,4 @@ if (Math.ab
 ----------------------------------------------------------------------------------------------------
 Remove same excerpt for same data-element:
 Ref: Fleet Api : Cookies
+*/
